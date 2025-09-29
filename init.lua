@@ -17,6 +17,12 @@ for _, cmd in ipairs { "git", "rg", { "fd", "fdfind" } } do
 end
 
 vim.opt.termguicolors = true -- enable 24-bit RGB colors
+
+-- ignore case
+vim.opt.ignorecase = true
+--searching with uppercase respects case
+vim.opt.smartcase = true
+
 -- Disable annoying deprecated message
 vim.deprecate = function() end
 
